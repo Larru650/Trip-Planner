@@ -1,0 +1,105 @@
+﻿
+/*site.css*/
+/*body {
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input[type=text], input[type=password] textarea {
+    width: 150px;
+}*/
+
+.headshot {
+    max-width: 50px;
+    border: 1px solid #222;
+    padding: 2px; /*space between image and border*/
+}
+
+/*#main {
+    background-color: #eee;
+    padding: 4px;
+    margin: 0; page margins on the main section
+}
+    
+
+#footer {
+    background-color: #222;
+    color: #eee;
+    padding: 8px 6px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+*/
+
+ /*.menu {
+    font-size: 12px;
+}
+
+.menu li {
+        list-style-type: none;
+    }
+
+ .menu li.active {
+            font-weight: bold;
+        }*/
+ 
+  /*
+here li.active goes without space as li and active are 
+         in the same tag, li is no the active parent. Now it says
+        that it'll apply to all li that have class active
+     */
+
+#sidebar {
+    background: #2a2c36;
+    color: #eee;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    overflow: hidden;
+    left: 0;
+    margin: 0;
+    -moz-transition: left ease .25s;
+    -o-transition: left ease .25s;
+    -webkit-transition: left ease .25s;
+    transition: left ease .25s;
+}
+
+    #sidebar.hide-sidebar {
+        left: -250px;
+        -moz-transition: left ease .25s;
+        -o-transition: left ease .25s;
+        -webkit-transition: left ease .25s;
+        transition: left ease .25s;
+    }
+
+#wrapper.hide-sidebar {
+    margin-left: 0;
+    -moz-transition: margin-left ease .25s;
+    -o-transition: margin-left ease .25s;
+    -webkit-transition: margin-left ease .25s; /*these are the vendor specifics-in case this property is not supported for all the browsers */
+    transition: margin-left ease .25s;
+}
+
+#wrapper {
+    margin: 0 0 0 250px;
+    -moz-transition: margin-left ease .25s;
+    -o-transition: margin-left ease .25s;
+    -webkit-transition: margin-left ease .25s;
+    transition: margin-left ease .25s; /*this way we will push the content inside wrapper (main and footer) to the left, as is equal to the sidebar width!*/
+    /*TOP RIGHT BOTTOM LEFT (clockwise)*/
+}
+
+#map{
+
+    width: 100%;
+    height: 600px;
+
+}

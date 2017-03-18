@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<!--we need to remove our startup.cs content to prevent it from showing another view-->
+<html>
+<head>
+    <title>The World - @ViewBag.Title</title><!--title of the browser and bookmark name-->
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootswatch/yeti/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css"  />
+    <link rel="stylesheet" href="~/css/site.css" />  <!--we need to use ~/ to specify that it the resource has to be in the root of the project and not in app-->
+    <!--Also, the bootstrap  goes before the css as we will want to amend the bootstrap look with our own css. Css will overwrite this way bootstrap-->
+
+   <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> the glyphicons aregoing away so i'll use instead the font awesome-->
+    
+</head>
+
+<body>
+
+    <div id="sidebar">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <img src="~/img/avatar.png" alt="headshot" class="headshot" />
+            <span id="username">@User.Identity.Name</span> <!--inline section of codes as opposed to  "p" that are blocks-->
+        }
+        <ul class="nav">
+            <li class="active"><a asp-controller="App" asp-action="Index">Home</a></li> <!--rather than using normal a href links, it's better to use a tag helper, where we can map the controller and actions. This way, if there is any change on the map route, the link will still work. Basically the a href is created programmatically and rendered in the server-->
+            <li><a asp-controller="App" asp-action="About">About</a></li>
+            <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li><a asp-controller="App" asp-action="Trips">My Trips</a></li>
+                <li><a asp-controller="Auth" asp-action="Logout">Logout</a></li>
+            }
+        </ul>
+    </div>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <button id="sidebarToggle" class="btn btn-primary">
+                            <i class="fa fa-angle-left"></i>
+                        </button>
+                    </li>
+                </ul>
+                <a asp-controller="App" asp-action="Index" class="navbar-brand">The World</a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" class="btn btn-sm btn-info"><i class="fa fa-save"></i>Save</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-sm btn-info"><i class="fa fa-print"></i>Print</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="main" class="container-fluid">
+            <div>
+                @RenderBody() @*placeholder, this is the part of the page where im injecting*@
+                <!--shift+alt+w to create a div block-->
+
+            </div>
+
+
+        </div>
+
+        <div id="footer" class="container-fluid">
+            <div class="navbar navbar-inverse navbar-fixed-bottom">
+                <div>
+                    <h4 class="text-center text-info">   &copy; 2017 The World Ltd.</h4>
+                </div>
+            </div>
+        </div> <!--this is called entity, in other lang i called escaping a charcater-->
+        <!--below, we create a javascript tag and link it with the source attribute to the js file-->
+    </div>
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script> <!--we include the bootstrap js-->
+
+    <environment names="Development">
+        <script type="text/javascript" src="~/js/site.js"></script>
+    </environment>
+    <environment names="Production, Staging">
+        <script type="text/javascript" src="~/lib/_app/site.js"></script>
+    </environment>
+
+    @RenderSection("scripts", false)
+
+
+
+</body>
+</html>

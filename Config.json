@@ -1,0 +1,11 @@
+{
+  "MailSettings": {
+    "ToAddress": "alarru650@gmail.com"
+  },
+  "Data": {
+    "WorldContextConnection": "Server=(localDb)\\MSSQLLocalDB;Database=TheWorldDb;Trusted_Connection=true;MultipleActiveResultSets=true;"
+  },
+  "Keys": {
+    "BingKey": "DONTEVERPUTKEYSINSOURCECONTROL"
+  }
+}

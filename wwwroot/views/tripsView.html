@@ -1,0 +1,32 @@
+﻿<div class="col-sm-6 col-md-offset-3"> <!--the following code that assigned this to the controller has been removed as the route is doing its function now: ng-controller:tripsController as vm-->
+    <div class="text-danger" ng-show="vm.errorMessage">{{ vm.errorMessage }}</div>
+    <wait-cursor display-when="vm.isBusy"></wait-cursor>
+
+    <table class="table table-responsive table-striped">
+        <tr ng-repeat="trip in vm.trips">
+            <!--just like a FOREACH, we will create a variable called trip for each one that is in trips and then create a row for it*@-->
+            <td>{{ trip.name }}</td> <!--@*1st column*@-->
+            <td>{{ trip.created | date:'MM-dd-yyyy' }}</td><!--@*2nd column with a filter, that helps to display in a shorter way. If it's note defined, date will show the default format*@-->
+            <td><a ng-href="#!/editor/{{ trip.name }}" class="btn btn-sm btn-primary">Manage</a></td> <!--This takes us to the editor. The # represents an inter-page link-->
+        </tr> <!--ng-href allows us to bind data into the a href element-->
+    </table>
+
+    <form novalidate name="newTripForm" ng-submit="vm.addTrip()">
+        <!--@*we are telling to call our addTrip function inside our vm*@-->
+        <div class="form-group">
+            <label>Trip Name</label>
+            <input class="form-control" type="text" id="name" name="name" ng-model="vm.newTrip.name" required ng-minlength="5" /> <!--@*adding newTrip.name will add the property name when people add new trips into the new trip*@-->
+            <div>
+                <span ng-show="newTripForm.name.$error.required" class="text-warning">Name is required.</span>
+                <span ng-show="newTripForm.name.$error.minlength" class="text-warning">Name must be at least five characters.</span>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Add"
+                   class="btn btn-success btn-sm"
+                   ng-disabled="newTripForm.$invalid" /><!--@*$ makes the expression true if the form is invalid (~ an if)*@-->
+        </div>
+
+    </form>
+</div> <!--@*we are telling angular that in this subsection of the page, tripscontroller is responsible of it. We create a variable vm for data binding*@-->

@@ -1,0 +1,41 @@
+﻿@*@model IEnumerable<TheWorld.Models.Trip>*@ @*we are not using this anymore as we will access the API with client side code to access all the data*@
+@*adding this on top will give you a better development exp. Although we passed the data into the view, adding the model here will allow us to use intellisense in this view*@
+@*double curly braces are used to tell Angular to compute what is inside (similar ro the ad in razor)*@
+
+
+@{
+
+    ViewBag.Title = "Home Page";
+}
+@section scripts
+{
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/underscore/underscore-min.js"></script>
+    <script src="~/lib/angular-route/angular-route.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQU2v2NVt4FikpfSj8FHci-wYLvQ4CN0Y" async="" defer="defer" type="text/javascript"></script>
+    <script src="~/lib/gmaps/gmaps.min.js"></script>
+    <script src="~/lib/travelmap/travelmap.min.js"></script>
+    
+    <environment names="Development">
+    <script src="~/js/simpleControls.js"></script>
+    <script src="~/js/app-trips.js"></script>
+    <script src="~/js/tripsController.js"></script>
+    <script src="~/js/tripEditorController.js"></script>
+    </environment>
+
+    <environment names="Production, Staging">
+    <script src="~/lib/_app/simpleControls.js"></script>
+    <script src="~/lib/_app/app-trips.js"></script>
+    <script src="~/lib/_app/tripsController.js"></script>
+    <script src="~/lib/_app/tripEditorController.js"></script>
+    </environment>
+}
+
+<div class="row" ng-app="app-trips">
+    @*we provide the module that will be responsible of this code*@
+
+    <div ng-view></div>
+    @*we inject the views that are on the module into this div container. *@
+
+
+</div>

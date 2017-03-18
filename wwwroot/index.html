@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html> <!--we need to remove our startup.cs content to prevent it from showing another view-->
+<html>
+<head>
+    <title>The World</title><!--title of the browser and bookmark name-->
+    <meta charset="utf-8"/>
+   <link rel="stylesheet"href="css/site.css"/>
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <img src="img/steventay.jpg" alt="headshot" class="headshot" />
+        <span id="username">Name taken from html/cshtml</span> <!--inline section of codes as opposed to  "p" that are blocks-->
+        <ul class="menu">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </div>
+   
+        <div id="wrapper">
+            <div id="main">
+            <div>
+                <button id="sidebarToggle">Toggle Menu</button>
+            </div>
+                <!--shift+alt+w to create a div block-->
+                <h3>The World</h3>
+                <p>This will be a fun website soon!</p>
+
+                <form>
+
+                    <div>
+                        <label>Date</label>
+                        <input />
+                    </div>
+
+                    <div>
+                        <label>Location</label>
+                        <input />
+                    </div>
+
+                    <div><input type="submit" value="Add" /></div>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            &copy; 2015 THe World Ltd.
+        </div> <!--this is called entity, in other lang i called escaping a charcater-->
+   
+    <!--below, we create a javascript tag and link it with the source attribute to the js file-->
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/site.js"></script>
+
+</body>
+</html>

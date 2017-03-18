@@ -1,0 +1,15 @@
+﻿@model IEnumerable<TheWorld.Models.Trip>
+    @*adding this on top will give you a better development exp. Although we passed the data into the view, adding the model here will allow us to use intellisense in this view*@
+
+@{
+
+    ViewBag.Title = "Home Page";
+}
+<div class="row">
+    <div class="col-md-12">
+        <h1>The World App</h1>
+        <p>This app will allow you to plan your world trips</p>
+        <a asp-controller="App" asp-action="trips" class="btn btn-lg- btn-success">View My Trips</a>
+         
+    </div>
+</div>
