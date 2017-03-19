@@ -1,5 +1,5 @@
---temp-output:c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\obj\Debug\netcoreapp1.0\
---out:c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\bin\Debug\netcoreapp1.0\TheWorld.dll
+--temp-output:C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\obj\Debug\netcoreapp1.0\
+--out:C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\bin\Debug\netcoreapp1.0\TheWorld.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -205,32 +205,32 @@
 --reference:C:\Users\Albert\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\Albert\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\Albert\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\obj\Debug\netcoreapp1.0\TheWorlddotnet-compile.deps.json",TheWorld.deps.json
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Program.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Startup.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Controllers\AuthController.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Controllers\Api\StopsController.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Controllers\Api\TripsController.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Controllers\Web\AppController.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170221234816_InitialDatabase.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170221234816_InitialDatabase.Designer.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170304205512_AddingIdentity.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170304205512_AddingIdentity.Designer.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170304205708_IdentityClasses.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170304205708_IdentityClasses.Designer.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\WorldContextModelSnapshot.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Models\IWorldRepository.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Models\Stop.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Models\Trip.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Models\WorldContext.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Models\WorldContextSeedData.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Models\WorldRepository.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Models\WorldUser.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Services\DebugMailService.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Services\GeoCoordService.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Services\GeoCoordsResult.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\Services\IMailServices.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\ViewModels\ContactViewModel.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\ViewModels\LoginViewModel.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\ViewModels\StopViewModel.cs
-c:\Users\Albert\Documents\Visual Studio 2015\Projects2\TheWorld\src\TheWorld\ViewModels\TripViewModel.cs
+--resource:"C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\obj\Debug\netcoreapp1.0\TheWorlddotnet-compile.deps.json",TheWorld.deps.json
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Program.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Startup.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Controllers\AuthController.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Controllers\Api\StopsController.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Controllers\Api\TripsController.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Controllers\Web\AppController.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170221234816_InitialDatabase.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170221234816_InitialDatabase.Designer.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170304205512_AddingIdentity.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170304205512_AddingIdentity.Designer.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170304205708_IdentityClasses.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\20170304205708_IdentityClasses.Designer.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Migrations\WorldContextModelSnapshot.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Models\IWorldRepository.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Models\Stop.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Models\Trip.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Models\WorldContext.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Models\WorldContextSeedData.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Models\WorldRepository.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Models\WorldUser.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Services\DebugMailService.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Services\GeoCoordService.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Services\GeoCoordsResult.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\Services\IMailServices.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\ViewModels\ContactViewModel.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\ViewModels\LoginViewModel.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\ViewModels\StopViewModel.cs
+C:\Users\Albert\documents\visual studio 2015\Projects2\TheWorld\src\TheWorld\ViewModels\TripViewModel.cs
