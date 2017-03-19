@@ -16,7 +16,7 @@ input[type=text], input[type=password] textarea {
 }*/
 
 .headshot {
-    max-width: 50px;
+    max-width: 60px;
     border: 1px solid #222;
     padding: 2px; /*space between image and border*/
 }
