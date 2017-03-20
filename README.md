@@ -9,10 +9,10 @@ Essentially, it touches all the necessary languages and frameworks to be able to
 
 ### Languages used
 
-*C#
-*Js
-*Html
-*Css
+* C#
+* Js
+* Html
+* Css
 
 
 
