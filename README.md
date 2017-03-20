@@ -16,19 +16,19 @@ Essentially, it touches all the necessary languages and frameworks to be able to
 
 
 
-###Frameworks
+### Frameworks
 
-*ASP.NET CORE
-*Angular Js
-*Bootstrap
+* ASP.NET CORE
+* Angular Js
+* Bootstrap
 
 
-###Libraries
+### Libraries
 
-*Jquery
+* Jquery
 
 
 ### Requires:
-*Visual Studio 2015 Community
-*Postman
+* Visual Studio 2015 Community
+* Postman
 
