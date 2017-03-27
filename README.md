@@ -2,7 +2,7 @@
 
 # Trip Planner (TheWorld)
 
-_by Shawn Wildermuth_
+_based on Shawn Wildermuth's tutorial_
 
 
 This repo contains the completed app after following the Pluralsight course **Building a web app with ASP.NET Core, MV6, EF Core and Angular**.
@@ -11,7 +11,7 @@ Essentially, it touches all the necessary languages and frameworks to be able to
 
 
 ### Prerequisites
-:
+
 * Visual Studio 2015 Community
 * Postman
 
