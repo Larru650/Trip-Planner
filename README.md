@@ -9,6 +9,13 @@ This repo contains the completed app after following the Pluralsight course **Bu
 
 Essentially, it touches all the necessary languages and frameworks to be able to develop a web application, both front and backend.
 
+
+### Prerequisites
+:
+* Visual Studio 2015 Community
+* Postman
+
+
 ### Languages used
 
 * C#
@@ -30,7 +37,4 @@ Essentially, it touches all the necessary languages and frameworks to be able to
 * Jquery
 
 
-### Requires:
-* Visual Studio 2015 Community
-* Postman
 
