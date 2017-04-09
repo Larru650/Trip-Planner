@@ -6,7 +6,7 @@
 _based on Shawn Wildermuth's tutorial_
 
 
-This repo contains the completed app after following the Pluralsight course **Building a web app with ASP.NET Core, MV6, EF Core and Angular**.
+This app is based on the Pluralsight course **Building a web app with ASP.NET Core, MV6, EF Core and Angular**.
 
 Essentially, it touches all the necessary languages and frameworks to be able to develop a web application, both front and backend.
 
